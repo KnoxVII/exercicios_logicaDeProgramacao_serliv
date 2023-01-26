@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programação com Javascript</title>
+</head>
+
+<body>
+    <h1>Logica de Programação com Javascript</h1>
+
+    <script>
+        alert("Cada jogador escolhe um número, caso o número sorteado seja 0, o jogador que escolher o menor número vence, mas caso o numero sorteado seja 1, quem escolher o maior número vence.")
+
+        // fazer jogador1 digitar um número
+        var jogador1 = prompt("Jogador 1, digite um numero");
+        jogador1 = parseInt(jogador1);
+
+        // fazer jogador2 digitar um número
+        var jogador2 = prompt("Jogador 2, digite um numero");
+        jogador2 = parseInt(jogador2);
+        
+        //sortear um numero entre 0 e 1
+        var numeroSorteado = parseInt(Math.random() * 2)
+        
+        switch(jogador1,jogador2,numeroSorteado){
+            case jogador1 === jogador2:
+                alert("Empatou!");
+                break
+            case numeroSorteado === 0 && jogador1 < jogador2:
+                alert("O jogador 1 venceu!");
+            case numeroSorteado === 0 && jogador2 < jogador1:
+                alert("O jogador 2 venceu!");
+                break
+            case numeroSorteado === 1 && jogador1 > jogador2:
+                alert("O jogador 1 venceu!");
+            case numeroSorteado === 1 && jogador2 > jogador1:
+                alert("O jogador 2 venceu!");
+                break           
+        }            
+        alert("O número sorteado foi: " + numeroSorteado);
+    </script>
+</body>
+</html>

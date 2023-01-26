@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programação com Javascript</title>
+</head>
+
+<body>
+    <h1>Logica de Programação com Javascript</h1>
+    
+    <script>
+        function mostrarArea(){
+            var largura = prompt("Digite a largura");
+            largura = parseFloat(largura);
+
+            var altura = prompt("Digite a altura");
+            altura = parseFloat(altura);
+
+            try {
+                var area = caclularArea(largura, altura);                
+            } catch (e) {
+                area = e;
+            }
+
+
+            alert("A area total é: " + area);
+        }
+        
+        mostrarArea();
+
+        function caclularArea(l, a){
+            if(l === undefined || a === undefined){
+                throw new Error("calcularArea precisa receber dois números");
+            }
+
+            if(isNaN(l) || isNaN(a)){
+                throw new Error("Apenas números");
+            }
+
+            return l * a;
+        }
+    </script>
+</body>
+</html>

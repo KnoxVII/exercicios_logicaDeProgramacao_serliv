@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programação com Javascript</title>
+</head>
+
+<body>
+    <h1>Logica de Programação com Javascript</h1>
+    
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+    <div id="output"></div>
+    
+    <script>
+        //função mostrar tabuada
+        function mostrarTabuada(){
+            //perguntar um numero para o usuario
+            var numero = prompt("Digite um numero");
+            //Chamar função limpar tabuada
+            limparTabuada();
+            //converter o numero
+            numero = parseFloat(numero);
+            //criar uma variavel para o indice
+            i = 1;
+            //enquando indice <= 1000 concatena na variavel mensagem                  
+            while(i <= 1000){
+                mensagem += numero + " x " + i + " = " + (numero * i) + "<br>";
+                i++
+            }
+            //mensagem
+            output.innerHTML = mensagem        
+        }       
+        //função limpar tabuada
+        function limparTabuada(){
+        //limpar a mensagem     
+        mensagem = ""
+        //mensagem
+        output.innerHTML = mensagem
+        }      
+    </script>
+</body>
+</html>

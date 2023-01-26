@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programação com Javascript</title>
+</head>
+
+<body>
+    <h1>Logica de Programação com Javascript</h1>
+
+    <script>
+        var nota1 = prompt("Digite a primeira nota");
+        nota1 = parseFloat(nota1);
+
+        var nota2 = prompt("Digite a segunda nota");
+        nota2 = parseFloat(nota2);
+
+        var media = (nota1 + nota2) /2
+
+        if(nota1 === 0 || nota2 === 0 || media <= 5){
+            alert("Sinto muito, não foi dessa vez")
+        }else{
+            alert("Parabéns! você foi aprovado")
+        }
+
+    </script>
+</body>
+</html>
