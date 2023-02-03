@@ -22,8 +22,10 @@
                 document.write("O numero maior é: " + numero1, "<br>");
             } else if (numero2 > numero1 && numero2 > numero3) {
                 document.write("O numero maior é: " + numero2, "<br>");                
-            } else {
+            } else if (numero3 > numero1 && numero3 > numero2) {
                 document.write("O numero maior é: " + numero3, "<br>");
+            } else {
+                document.write("Os numeros são iguais");
             }
         }
 
@@ -32,8 +34,10 @@
                 document.write("O numero menor é: " + numero1, "<br>");
             } else if (numero2 < numero1 && numero2 < numero3) {
                 document.write("O numero menor é: " + numero2, "<br>");                
-            } else {
+            } else if (numero3 < numero1 && numero3 < numero2) {
                 document.write("O numero menor é: " + numero3, "<br>");
+            } else {
+                document.write("Os numeros são iguais");
             }
         }
 
