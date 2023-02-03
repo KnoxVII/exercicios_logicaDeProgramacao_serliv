@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programação com Javascript</title>
+</head>
+
+<body>
+    <h1>Exercícios de Javascript</h1>
+
+    <script>
+        var numero1 = parseInt(Math.random() * 101);
+        var numero2 = parseInt(Math.random() * 101);
+        var numero3 = parseInt(Math.random() * 101);
+
+        var soma = parseInt(numero1 + numero2 + numero3);
+
+        document.write("1° Número: ", numero1, "<br>");
+        document.write("2° Número: ", numero2, "<br>");
+        document.write("3° Número: ", numero3, "<br>", "<br>");
+        document.write("Soma: ", soma, "<br>");
+        
+        var media = (numero1 + numero2 + numero3) / 3;
+        var media = media.toFixed(2);
+
+        document.write("Média: ", media);
+    </script>
+</body>
+</html>
